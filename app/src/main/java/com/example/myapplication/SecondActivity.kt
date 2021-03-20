@@ -389,7 +389,5 @@ class SecondActivity: AppCompatActivity() {
             }
             b9.isClickable = false
         }
-
-
     }
 }
