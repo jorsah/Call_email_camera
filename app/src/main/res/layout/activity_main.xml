@@ -7,125 +7,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#989898"
     tools:context=".MainActivity"
     tools:ignore="MissingClass">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/nameET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tic-Tac-Toe"
-        android:textColor="#232323"
-        android:textSize="36sp"
-        android:textStyle="bold|italic"
-        android:typeface="sans"
+        android:layout_marginTop="107dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player2"
-        android:layout_width="115dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="25dp"
-        android:gravity="center"
-        android:text="Player 2"
-        android:textColor="#D5000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/player1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player1"
-        android:layout_width="115dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="112dp"
-        android:gravity="center"
-        android:text="Player 1"
-        android:textColor="#D5000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/player2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/score1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="80dp"
-        android:text="0"
-        android:textColor="#D5000000"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toStartOf="@+id/score2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/score2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="140dp"
-        android:text="0"
-        android:textColor="#D5000000"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/p1et"
-        android:layout_width="190dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="107dp"
-        android:layout_marginBottom="82dp"
+        android:id="@+id/surnameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
         android:ems="10"
-        android:hint="First Player"
+        android:hint="Surname"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/p2et"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score1" />
-
-    <EditText
-        android:id="@+id/p2et"
-        android:layout_width="190dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="107dp"
-        android:layout_marginBottom="83dp"
-        android:ems="10"
-        android:hint="Second Player"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/p1et"
-        app:layout_constraintTop_toBottomOf="@+id/score2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameET" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneET" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="158dp"
-        android:layout_height="88dp"
-        android:layout_marginBottom="203dp"
-        android:background="#75575757"
-        android:rotationX="5"
-        android:text="Start Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="198dp"
+        android:text="Sign in "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
 </>
